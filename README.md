@@ -79,9 +79,12 @@ Example of use:
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+1. Clone this repo
+2. Ensure you have the ruby-version defined in `.ruby-version`
+3. `bundle install` to install all the gems
+4. `cp .env .env.development` then add your Beeswax credentials to `.env.development`
+5. Open an IRB console with the gem loaded: `irb -I lib -r  ./lib/beeswaxapi.rb`
+6. Run the script at `development_setup_script.rb` to configure the gem with your credentials from the `.env.development` file
 
 ## Sources
 Beeswax Buzz API: [https://docs.beeswax.com/docs]
