@@ -1,5 +1,5 @@
 module BeeswaxAPI
   class LineItem < Endpoint
-    path :line_item
+    path "v2/line-items"
   end
 end
